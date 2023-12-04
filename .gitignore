@@ -56,3 +56,45 @@ infra/tfplan
 
 infra/*
 !infra/main.tf
+
+# ignore intermediary package folder 
+package
+
+# Ignore deploy folder and zip
+deploy
+deploy/
+deploy/lambda_function.zip
+
+# Ignore .DS_Store files
+.DS_Store
+**/.DS_Store
+
+# Environment variables
+.env
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
